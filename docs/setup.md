@@ -1,41 +1,24 @@
-# Configuração do Projeto CineScope
+# CineScope Project Setup
 
-Este documento registra os passos de configuração e instalação do projeto CineScope.
+This document outlines the setup and installation steps for the CineScope project.
 
-## Etapa 1: Estrutura inicial do projeto
+## Step 1: Initial Project Structure
 
-1. Criamos a estrutura de diretórios básica:
-   - `app/` - Aplicativo React Native
-   - `backend/` - API Node.js
-   - `docs/` - Documentação do projeto
-   - `.github/workflows/` - Configurações de CI/CD
+1. We created the basic directory structure:
+   - `app/` – React Native application  
+   - `backend/` – Node.js API  
+   - `docs/` – Project documentation  
+   - `.github/workflows/` – CI/CD configuration files  
 
-2. Configuramos o Docker Compose para desenvolvimento local:
-   - Serviço backend com Node.js
-   - Banco de dados PostgreSQL
+2. Docker Compose was configured for local development:
+   - Backend service using Node.js  
+   - PostgreSQL database  
 
-3. Criamos os arquivos README iniciais para o app e o backend
+3. Initial README files were created for both the app and backend.
 
-## Etapa 2: Configuração do React Native com Expo
+## Step 2: React Native Setup with Expo
 
-1. Instalamos o Expo CLI globalmente:
-```bash
-npm install -g expo-cli
-```
+1. Installed the Expo CLI globally:
 
-2. Inicializamos o projeto Expo na pasta app/:
-   - Criamos um projeto temporário com `npx create-expo-app`
-   - Transferimos os arquivos para a pasta `app/`
-   - Personalizamos o README.md com as informações específicas do CineScope
-
-3. Estrutura base do aplicativo React Native:
-   - Configuração básica do Expo
-   - Estrutura de diretórios recomendada
-
-## Próximos Passos
-
-- Configurar o backend Node.js/Express
-- Implementar a autenticação de usuários
-- Criar os modelos de dados do PostgreSQL
-- Desenvolver as principais telas do aplicativo
-- Implementar a integração com a API do TMDb
+   ```bash
+   npm install -g expo-cli

@@ -18,9 +18,10 @@ app.get('/', (req, res) => {
   });
 });
 
-// API routes will be added here
-// app.use('/api/movies', require('./routes/movies'));
-// app.use('/api/users', require('./routes/users'));
+// API routes
+app.use('/api/auth', require('./routes/auth.routes'));
+app.use('/api/movies', require('./routes/movies.routes'));
+app.use('/api/tmdb', require('./routes/tmdb.routes'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
